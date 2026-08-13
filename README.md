@@ -28,3 +28,6 @@ npm run deploy
 - TypeScript
 - Vite
 - (Add any other packages you use here [TODO: Tailwind, GSAP, etc.])
+
+## 📝 License
+This project is licensed under the [MIT License](LICENSE).
