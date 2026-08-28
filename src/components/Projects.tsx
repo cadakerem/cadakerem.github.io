@@ -50,17 +50,15 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 px-4 max-w-6xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-12 inline-block border-b-2 border-blue-500/50 pb-2">Featured Projects</h2>
-      
-      {/* Horizontal Scroll Container */}
-      <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-slate-900/50 [&::-webkit-scrollbar-thumb]:bg-slate-700/50 [&::-webkit-scrollbar-thumb]:rounded-full text-left">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="min-w-[85vw] md:min-w-[400px] flex-shrink-0 snap-center bg-slate-900/40 backdrop-blur-md p-6 rounded-xl border border-slate-700/50 hover:border-blue-400/50 hover:bg-slate-800/40 transition-all flex flex-col h-full hover:-translate-y-1"
+            className="bg-slate-900/40 backdrop-blur-md p-6 rounded-xl border border-slate-700/50 hover:border-blue-400/50 hover:bg-slate-800/40 transition-all flex flex-col h-full hover:-translate-y-1"
           >
             <div className="flex justify-between items-start mb-4">
               <h3 className="text-xl font-bold text-slate-100">{project.title}</h3>
@@ -90,7 +88,7 @@ export default function Projects() {
             <p className="text-slate-400 mb-6 flex-grow">{project.description}</p>
             <div className="flex flex-wrap gap-2 mt-auto">
               {project.tags.map(tag => (
-                <span key={tag} className="text-xs px-2 py-1 bg-slate-700/60 text-slate-300 rounded-md whitespace-nowrap">
+                <span key={tag} className="text-xs px-2 py-1 bg-slate-700/60 text-slate-300 rounded-md">
                   {tag}
                 </span>
               ))}
