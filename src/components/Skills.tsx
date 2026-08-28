@@ -17,9 +17,9 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold mb-12 border-b border-slate-700 pb-2">Tech Stack & Tools</h2>
-      <div className="space-y-8">
+    <section id="skills" className="py-20 px-4 max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl font-bold mb-12 inline-block border-b-2 border-purple-500/50 pb-2">Tech Stack & Tools</h2>
+      <div className="space-y-12">
         {skillCategories.map((category, idx) => (
           <motion.div 
             key={idx}
@@ -29,7 +29,7 @@ export default function Skills() {
             transition={{ duration: 0.5, delay: idx * 0.1 }}
           >
             <h3 className="text-xl font-semibold mb-4 text-blue-400">{category.title}</h3>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
               {category.skills.map(skill => (
                 <div key={skill} className="bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-700/50 text-slate-300 font-medium hover:border-emerald-400/50 hover:text-emerald-300 transition-colors cursor-default">
                   {skill}

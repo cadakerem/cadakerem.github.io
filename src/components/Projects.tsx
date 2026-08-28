@@ -48,9 +48,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold mb-12 border-b border-slate-700 pb-2">Featured Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="projects" className="py-20 px-4 max-w-6xl mx-auto text-center">
+      <h2 className="text-3xl font-bold mb-12 inline-block border-b-2 border-blue-500/50 pb-2">Featured Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
         {projects.map((project, index) => (
           <motion.div
             key={index}

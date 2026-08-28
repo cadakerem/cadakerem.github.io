@@ -8,9 +8,9 @@ export default function About() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="bg-slate-900/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border border-slate-800/60"
+        className="bg-slate-900/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border border-slate-800/60 text-center"
       >
-        <h2 className="text-3xl font-bold mb-8 border-b border-slate-700 pb-2">About Me</h2>
+        <h2 className="text-3xl font-bold mb-8 inline-block border-b-2 border-emerald-500/50 pb-2">About Me</h2>
         <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
           <p>
             Hi! I'm a software developer with a strong foundation in <strong>Computer Programming</strong> and an ongoing passion for <strong>Digital Game Design</strong>. 
