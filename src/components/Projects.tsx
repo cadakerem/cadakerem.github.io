@@ -52,7 +52,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-400/50 transition-colors flex flex-col h-full"
+            className="bg-slate-900/40 backdrop-blur-md p-6 rounded-xl border border-slate-700/50 hover:border-blue-400/50 hover:bg-slate-800/40 transition-all flex flex-col h-full hover:-translate-y-1"
           >
             <div className="flex justify-between items-start mb-4">
               <h3 className="text-xl font-bold text-slate-100">{project.title}</h3>

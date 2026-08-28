@@ -8,6 +8,7 @@ export default function About() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
+        className="bg-slate-900/30 backdrop-blur-md p-8 md:p-10 rounded-2xl border border-slate-800/60"
       >
         <h2 className="text-3xl font-bold mb-8 border-b border-slate-700 pb-2">About Me</h2>
         <div className="space-y-4 text-lg text-slate-300 leading-relaxed">

@@ -31,7 +31,7 @@ export default function Skills() {
             <h3 className="text-xl font-semibold mb-4 text-blue-400">{category.title}</h3>
             <div className="flex flex-wrap gap-3">
               {category.skills.map(skill => (
-                <div key={skill} className="bg-slate-800 px-4 py-2 rounded-lg border border-slate-700 text-slate-300 font-medium">
+                <div key={skill} className="bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-700/50 text-slate-300 font-medium hover:border-emerald-400/50 hover:text-emerald-300 transition-colors cursor-default">
                   {skill}
                 </div>
               ))}
