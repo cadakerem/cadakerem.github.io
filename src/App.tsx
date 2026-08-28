@@ -8,8 +8,8 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50 selection:bg-blue-500/30 relative overflow-hidden">
-      {/* Premium Gradient Background */}
-      <div className="fixed inset-0 z-0 pointer-events-none" aria-hidden="true">
+      {/* Gradient Background — desktop only, too heavy for mobile */}
+      <div className="hidden md:block fixed inset-0 z-0 pointer-events-none" aria-hidden="true">
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-blue-600/20 rounded-full blur-[80px]"></div>
         <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-emerald-600/20 rounded-full blur-[80px]"></div>
         <div className="absolute top-[30%] left-[40%] w-[40%] h-[40%] bg-purple-600/20 rounded-full blur-[80px]"></div>
