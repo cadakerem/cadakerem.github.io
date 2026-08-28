@@ -16,7 +16,7 @@ export default function Hero() {
         >
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 blur-md opacity-50"></div>
           <img
-            src="/avatar.png"
+            src="https://github.com/cadakerem.png"
             alt="Kerem Barbaros Karnabat - Profile Photo"
             className="relative w-full h-full object-cover rounded-full border-2 border-slate-700/50 shadow-2xl"
           />
