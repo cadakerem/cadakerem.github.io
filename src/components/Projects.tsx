@@ -1,48 +1,54 @@
 import { motion } from 'framer-motion';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
     title: "ReviewForge",
     description: "A GitHub Action that reviews Pull Requests for security flaws and provides auto-fixes.",
     link: "https://github.com/cadakerem/ReviewForge",
+    demo: null,
     tags: ["GitHub Actions", "AI", "Security"]
   },
   {
     title: "Agentic Vault",
     description: "An Obsidian plugin for automated Git sync and Issue-Driven Development workflows.",
     link: "https://github.com/cadakerem/agentic-vault",
+    demo: null,
     tags: ["Obsidian", "TypeScript", "Automation"]
   },
   {
     title: "Sprite Packer Web",
     description: "A browser-based tool for game developers to pack PNGs into optimized sprite sheets.",
     link: "https://github.com/cadakerem/sprite-packer-web",
+    demo: "https://cadakerem.github.io/sprite-packer-web/",
     tags: ["Web", "Tooling", "GameDev"]
   },
   {
     title: "Portfolio AI",
     description: "A Telegram bot for tracking stocks and TEFAS mutual funds.",
     link: "https://github.com/cadakerem/portfolio-ai",
+    demo: null,
     tags: ["Python", "Telegram Bot", "Finance"]
   },
   {
     title: "Coffin Clash",
-    description: "A local 2-player combat and wave-defense game.",
+    description: "A local 2-player combat and wave-defense game built with MonoGame.",
     link: "https://github.com/cadakerem/coffin-clash",
-    tags: ["Unity", "C#", "Game"]
+    demo: null,
+    tags: ["MonoGame", "C#", "Game"]
   },
   {
     title: "TLOU Simulation",
     description: "A Machinations simulation analyzing resource management and combat pressure.",
     link: "https://github.com/cadakerem/tlou-simulation",
+    demo: null,
     tags: ["Game Design", "Machinations", "Simulation"]
   }
 ];
 
 export default function Projects() {
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto">
+    <section id="projects" className="py-20 px-4 max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-12 border-b border-slate-700 pb-2">Featured Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
@@ -56,14 +62,33 @@ export default function Projects() {
           >
             <div className="flex justify-between items-start mb-4">
               <h3 className="text-xl font-bold text-slate-100">{project.title}</h3>
-              <a href={project.link} target="_blank" rel="noreferrer" className="text-slate-400 hover:text-white">
-                <FaGithub size={20} />
-              </a>
+              <div className="flex gap-2">
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-emerald-400 hover:text-emerald-300 transition-colors"
+                    aria-label={`${project.title} canlı demo`}
+                  >
+                    <FaExternalLinkAlt size={16} />
+                  </a>
+                )}
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-slate-400 hover:text-white transition-colors"
+                  aria-label={`${project.title} GitHub reposu`}
+                >
+                  <FaGithub size={20} />
+                </a>
+              </div>
             </div>
             <p className="text-slate-400 mb-6 flex-grow">{project.description}</p>
             <div className="flex flex-wrap gap-2 mt-auto">
               {project.tags.map(tag => (
-                <span key={tag} className="text-xs px-2 py-1 bg-slate-700 text-slate-300 rounded-md">
+                <span key={tag} className="text-xs px-2 py-1 bg-slate-700/60 text-slate-300 rounded-md">
                   {tag}
                 </span>
               ))}

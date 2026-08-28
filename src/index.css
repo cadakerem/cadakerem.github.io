@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --bg-color: #0f172a; /* slate-900 */
+  --bg-color: #020617; /* slate-950 */
   --text-color: #f8fafc; /* slate-50 */
 }
 
@@ -9,4 +9,13 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Respect user's motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

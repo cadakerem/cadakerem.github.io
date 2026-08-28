@@ -17,7 +17,7 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section className="py-20 px-4 max-w-4xl mx-auto">
+    <section id="skills" className="py-20 px-4 max-w-4xl mx-auto">
       <h2 className="text-3xl font-bold mb-12 border-b border-slate-700 pb-2">Tech Stack & Tools</h2>
       <div className="space-y-8">
         {skillCategories.map((category, idx) => (
