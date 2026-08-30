@@ -23,12 +23,12 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 px-4 max-w-4xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-12 inline-block border-b-2 border-purple-500/50 pb-2">Tech Stack & Tools</h2>
-      <div className="space-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {skillCategories.map((category, idx) => (
           <motion.div 
             key={idx}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
           >
