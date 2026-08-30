@@ -11,7 +11,11 @@ const skillCategories = [
   },
   {
     title: "Data & Automation",
-    skills: ["n8n", "Pandas", "Backtrader", "yfinance", "GitHub Actions"]
+    skills: ["n8n", "Pandas", "Backtrader", "yfinance"]
+  },
+  {
+    title: "Systems & DevOps",
+    skills: ["Linux", "Bash", "GitHub Actions"]
   }
 ];
 
