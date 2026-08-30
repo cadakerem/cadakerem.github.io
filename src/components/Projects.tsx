@@ -41,7 +41,7 @@ const projects = [
     title: "TLOU Simulation",
     description: "A Machinations simulation analyzing resource management and combat pressure.",
     link: "https://github.com/cadakerem/tlou-simulation",
-    demo: "https://cadakerem.github.io/tlou-simulation/",
+    demo: "https://my.machinations.io/d/tlou-survival-loop-simulation/7a7ce51a522611f190390abc5ce0dcc9",
     tags: ["Game Design", "Machinations", "Simulation"]
   }
 ];
