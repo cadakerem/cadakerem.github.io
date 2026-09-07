@@ -1,7 +1,16 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import fetchedProjects from '../data/projects.json';
 
-const projects = [
+// Fallback manual projects to mix with fetched ones until user tags more repos with 'portfolio'
+const manualProjects = [
+  {
+    title: "Amnesic Ghost Framework",
+    description: "Fail-closed OpSec architecture for plausible deniability and anonymous RAM-OS routing.",
+    link: "https://github.com/cadakerem/amnesic-ghost-framework",
+    demo: null,
+    tags: ["Bash", "Security", "OpSec"]
+  },
   {
     title: "ReviewForge",
     description: "A GitHub Action that reviews Pull Requests for security flaws and provides auto-fixes.",
@@ -22,79 +31,79 @@ const projects = [
     link: "https://github.com/cadakerem/sprite-packer-web",
     demo: "https://cadakerem.github.io/sprite-packer-web/",
     tags: ["Web", "Tooling", "GameDev"]
-  },
-  {
-    title: "Portfolio AI",
-    description: "A Telegram bot for tracking stocks and TEFAS mutual funds.",
-    link: "https://github.com/cadakerem/portfolio-ai",
-    demo: null,
-    tags: ["Python", "Telegram Bot", "Finance"]
-  },
-  {
-    title: "Coffin Clash",
-    description: "A local 2-player combat and wave-defense game built with MonoGame.",
-    link: "https://github.com/cadakerem/coffin-clash",
-    demo: null,
-    tags: ["MonoGame", "C#", "Game"]
-  },
-  {
-    title: "TLOU Simulation",
-    description: "A Machinations simulation analyzing resource management and combat pressure.",
-    link: "https://github.com/cadakerem/tlou-simulation",
-    demo: "https://my.machinations.io/d/tlou-survival-loop-simulation/7a7ce51a522611f190390abc5ce0dcc9",
-    tags: ["Game Design", "Machinations", "Simulation"]
   }
 ];
 
+// Combine and format fetched projects
+const apiProjects = fetchedProjects.map((p: any) => ({
+  title: p.title,
+  description: p.description,
+  link: p.github,
+  demo: p.link !== p.github ? p.link : null,
+  tags: p.tech
+}));
+
+// Use API projects if we have enough, otherwise merge
+const displayProjects = apiProjects.length > 3 ? apiProjects : [...apiProjects, ...manualProjects].filter((v, i, a) => a.findIndex(t => (t.title === v.title)) === i);
+
+// Duplicate the array for infinite marquee effect
+const marqueeProjects = [...displayProjects, ...displayProjects];
+
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 max-w-6xl mx-auto text-center">
+    <section id="projects" className="py-20 px-4 max-w-full mx-auto text-center overflow-hidden">
       <h2 className="text-3xl font-bold mb-12 inline-block border-b-2 border-blue-500/50 pb-2">Featured Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-slate-900/40 backdrop-blur-md p-6 rounded-xl border border-slate-700/50 hover:border-blue-400/50 hover:bg-slate-800/40 transition-all flex flex-col h-full hover:-translate-y-1"
-          >
-            <div className="flex justify-between items-start mb-4">
-              <h3 className="text-xl font-bold text-slate-100">{project.title}</h3>
-              <div className="flex gap-2">
-                {project.demo && (
+      
+      {/* Marquee Container */}
+      <div className="relative w-full flex overflow-hidden group">
+        
+        {/* Left/Right Fade Gradients */}
+        <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-slate-950 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-slate-950 to-transparent z-10 pointer-events-none"></div>
+
+        {/* Marquee Track */}
+        <div className="flex w-max animate-marquee gap-6 px-3">
+          {marqueeProjects.map((project, index) => (
+            <motion.div
+              key={`${project.title}-${index}`}
+              className="bg-slate-900/40 backdrop-blur-md p-6 rounded-xl border border-slate-700/50 hover:border-blue-400/50 hover:bg-slate-800/40 transition-all flex flex-col w-80 sm:w-96 flex-shrink-0 text-left"
+            >
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-xl font-bold text-slate-100">{project.title}</h3>
+                <div className="flex gap-2">
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-emerald-400 hover:text-emerald-300 transition-colors"
+                      aria-label={`${project.title} canlıı demo`}
+                    >
+                      <FaExternalLinkAlt size={16} />
+                    </a>
+                  )}
                   <a
-                    href={project.demo}
+                    href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-emerald-400 hover:text-emerald-300 transition-colors"
-                    aria-label={`${project.title} canlı demo`}
+                    className="text-slate-400 hover:text-white transition-colors"
+                    aria-label={`${project.title} GitHub reposu`}
                   >
-                    <FaExternalLinkAlt size={16} />
+                    <FaGithub size={20} />
                   </a>
-                )}
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-slate-400 hover:text-white transition-colors"
-                  aria-label={`${project.title} GitHub reposu`}
-                >
-                  <FaGithub size={20} />
-                </a>
+                </div>
               </div>
-            </div>
-            <p className="text-slate-400 mb-6 flex-grow">{project.description}</p>
-            <div className="flex flex-wrap gap-2 mt-auto">
-              {project.tags.map(tag => (
-                <span key={tag} className="text-xs px-2 py-1 bg-slate-700/60 text-slate-300 rounded-md">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-        ))}
+              <p className="text-slate-400 mb-6 flex-grow">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                {project.tags.map((tag: string) => (
+                  <span key={tag} className="text-xs px-2 py-1 bg-slate-700/60 text-slate-300 rounded-md">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
