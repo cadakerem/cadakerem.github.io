@@ -1,7 +1,23 @@
 [
   {
+    "id": 1346645716,
+    "title": "cadakerem.github.io",
+    "description": "Personal developer portfolio of Kerem Barbaros Karnabat. Built with React, Vite & Tailwind CSS.",
+    "tech": [
+      "TypeScript",
+      "framer-motion",
+      "game-developer",
+      "react",
+      "tailwindcss",
+      "vite"
+    ],
+    "github": "https://github.com/cadakerem/cadakerem.github.io",
+    "link": "https://cadakerem.me",
+    "updated_at": "2026-09-07T22:41:12Z"
+  },
+  {
     "id": 1303441435,
-    "title": "Tlou Simulation",
+    "title": "tlou-simulation",
     "description": "A Python simulation of The Last of Us's survival/crafting loop, translated from a Machinations.io system design — models resource scarcity and combat pressure across three player skill profiles.",
     "tech": [
       "Python",
@@ -19,7 +35,7 @@
   },
   {
     "id": 1217472272,
-    "title": "Coffin Clash",
+    "title": "coffin-clash",
     "description": "A 2-player local combat game built with MonoGame/C# — push a central coffin toward your opponent's tower with arrow fire, then survive escalating skeleton waves between rounds.",
     "tech": [
       "C#",
@@ -37,7 +53,7 @@
   },
   {
     "id": 1330119028,
-    "title": "Portfolio Ai",
+    "title": "portfolio-ai",
     "description": "A lightweight, open-source Telegram bot for tracking global stocks and TEFAS mutual funds. Features dynamic scheduling, AI insights, and an optional local SQLite database.",
     "tech": [
       "Python",
@@ -59,7 +75,7 @@
   },
   {
     "id": 1333248724,
-    "title": "Sprite Packer Web",
+    "title": "sprite-packer-web",
     "description": "A modern 100 percent client-side Sprite Sheet packing tool built with React and MaxRects algorithm. Generates atlases and JSON metadata for Game Dev.",
     "tech": [
       "TypeScript",
@@ -77,7 +93,7 @@
   },
   {
     "id": 1336067491,
-    "title": "Agentic Vault",
+    "title": "agentic-vault",
     "description": "The ultimate Obsidian plugin to automate Git sync, manage AI system prompts, and enable Issue-Driven Development directly from your vault.",
     "tech": [
       "JavaScript",
@@ -94,7 +110,7 @@
   },
   {
     "id": 1342919843,
-    "title": "Reviewforge",
+    "title": "reviewforge",
     "description": "Autonomous SecOps & Code Review AI Agent. Serverless GitHub Action supporting Gemini, OpenAI, and Nvidia NIM.",
     "tech": [
       "Python",
@@ -112,7 +128,7 @@
   },
   {
     "id": 1360496269,
-    "title": "Amnesic Ghost Framework",
+    "title": "amnesic-ghost-framework",
     "description": "A privacy-focused Kali Linux Live environment designed to minimize persistent local artifacts, isolate sensitive data, and route network traffic securely through Tor.",
     "tech": [
       "Shell",
@@ -126,21 +142,5 @@
     "github": "https://github.com/cadakerem/amnesic-ghost-framework",
     "link": "https://github.com/cadakerem/amnesic-ghost-framework",
     "updated_at": "2026-09-07T22:25:50Z"
-  },
-  {
-    "id": 1346645716,
-    "title": "Cadakerem.Github.Io",
-    "description": "Personal developer portfolio of Kerem Barbaros Karnabat. Built with React, Vite & Tailwind CSS.",
-    "tech": [
-      "TypeScript",
-      "framer-motion",
-      "game-developer",
-      "react",
-      "tailwindcss",
-      "vite"
-    ],
-    "github": "https://github.com/cadakerem/cadakerem.github.io",
-    "link": "https://cadakerem.me",
-    "updated_at": "2026-09-07T22:23:36Z"
   }
 ]

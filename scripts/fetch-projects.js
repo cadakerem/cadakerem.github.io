@@ -1,4 +1,4 @@
-import https from 'https';
+﻿import https from 'https';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -27,7 +27,7 @@ https.get(options, (res) => {
       
       const formattedProjects = portfolioRepos.map(repo => ({
         id: repo.id,
-        title: repo.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+        title: repo.name,
         description: repo.description || 'A portfolio project.',
         tech: [...new Set([repo.language, ...(repo.topics || []).filter(t => t !== TOPIC_FILTER)])].filter(Boolean),
         github: repo.html_url,
