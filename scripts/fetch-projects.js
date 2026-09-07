@@ -29,7 +29,7 @@ https.get(options, (res) => {
         id: repo.id,
         title: repo.name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
         description: repo.description || 'A portfolio project.',
-        tech: [repo.language].filter(Boolean),
+        tech: [...new Set([repo.language, ...(repo.topics || []).filter(t => t !== TOPIC_FILTER)])].filter(Boolean),
         github: repo.html_url,
         link: repo.homepage || repo.html_url,
         updated_at: repo.updated_at
