@@ -4,10 +4,15 @@
     "title": "Cadakerem.Github.Io",
     "description": "Personal developer portfolio of Kerem Barbaros Karnabat. Built with React, Vite & Tailwind CSS.",
     "tech": [
-      "TypeScript"
+      "TypeScript",
+      "framer-motion",
+      "game-developer",
+      "react",
+      "tailwindcss",
+      "vite"
     ],
     "github": "https://github.com/cadakerem/cadakerem.github.io",
     "link": "https://cadakerem.me",
-    "updated_at": "2026-08-30T21:40:01Z"
+    "updated_at": "2026-09-07T22:19:12Z"
   }
 ]

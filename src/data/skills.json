@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Languages & Frameworks",
+    "skills": [
+      "C#",
+      "Python",
+      "MonoGame",
+      ".NET"
+    ]
+  },
+  {
+    "title": "Systems & DevOps",
+    "skills": [
+      "Linux",
+      "Bash",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "title": "Game Engines & 3D",
+    "skills": [
+      "Unity",
+      "Autodesk Maya"
+    ]
+  },
+  {
+    "title": "Data & Automation",
+    "skills": [
+      "n8n",
+      "Pandas",
+      "Backtrader",
+      "yfinance"
+    ]
+  }
+]

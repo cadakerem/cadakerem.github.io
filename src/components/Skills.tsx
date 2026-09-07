@@ -1,6 +1,8 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
+import skillCategoriesData from '../data/skills.json';
 
-const skillCategories = [
+// Fallback in case JSON is empty or fails to load
+const defaultCategories = [
   {
     title: "Languages & Frameworks",
     skills: ["C#", "Python", "MonoGame", ".NET", "React", "TypeScript", "Node.js", "Go"]
@@ -19,12 +21,14 @@ const skillCategories = [
   }
 ];
 
+const skillCategories = skillCategoriesData && skillCategoriesData.length > 0 ? skillCategoriesData : defaultCategories;
+
 export default function Skills() {
   return (
     <section id="skills" className="py-20 px-4 max-w-4xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-12 inline-block border-b-2 border-purple-500/50 pb-2">Tech Stack & Tools</h2>
       <div className="space-y-12">
-        {skillCategories.map((category, idx) => (
+        {skillCategories.map((category: any, idx: number) => (
           <motion.div 
             key={idx}
             initial={{ opacity: 0, x: -20 }}
@@ -34,7 +38,7 @@ export default function Skills() {
           >
             <h3 className="text-xl font-semibold mb-4 text-blue-400">{category.title}</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {category.skills.map(skill => (
+              {category.skills.map((skill: string) => (
                 <div key={skill} className="bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-700/50 text-slate-300 font-medium hover:border-emerald-400/50 hover:text-emerald-300 transition-colors cursor-default">
                   {skill}
                 </div>

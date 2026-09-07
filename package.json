@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "prebuild": "node scripts/fetch-projects.js"
+    "prebuild": "node scripts/fetch-projects.js && node scripts/fetch-skills.js"
   },
   "dependencies": {
     "framer-motion": "^13.1.1",
