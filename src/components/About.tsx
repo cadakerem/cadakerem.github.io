@@ -17,10 +17,10 @@ export default function About() {
             I thrive at the intersection of logical problem-solving and creative interactive experiences.
           </p>
           <p>
-            Whether I'm engineering core mechanics in Unity, building automated workflow tools with Python and Go, or designing 3D character pipelines, my goal is always to create seamless and optimized systems. I love bridging the gap between game development and backend engineering.
+            Recently, my work has heavily focused on <strong>SecOps, AI Agents, and Web Tooling</strong>. From architecting privacy-focused Linux environments and autonomous LLM code reviewers, to building client-side React applications for game developers, my goal is always to engineer robust, fail-safe systems.
           </p>
           <p>
-            Beyond game engines, I also have a deep interest in financial technology—developing algorithmic trading scripts, market scanners, and bots that analyze real-time data to make smart decisions.
+            Whether I'm programming core game mechanics in C#, automating workflows with TypeScript and Python, or developing quantitative trading bots, I love bridging the gap between low-level system architecture and high-level user experiences.
           </p>
         </div>
       </motion.div>
