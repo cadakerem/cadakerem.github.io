@@ -17,10 +17,10 @@ export default function About() {
             I thrive at the intersection of logical problem-solving and creative interactive experiences.
           </p>
           <p>
-            Recently, my work has heavily focused on <strong>SecOps, AI Agents, and Web Tooling</strong>. From architecting privacy-focused Linux environments and autonomous LLM code reviewers, to building client-side React applications for game developers, my goal is always to engineer robust, fail-safe systems.
+            Recently, I've been focusing on <strong>Security, AI Integrations, and Web Tooling</strong>. I enjoy building practical solutions—whether that's a privacy-focused Linux setup, an AI-powered code reviewer, or React-based tools for game developers. My goal is always to write clean code that solves real problems.
           </p>
           <p>
-            Whether I'm programming core game mechanics in C#, automating workflows with TypeScript and Python, or developing quantitative trading bots, I love bridging the gap between low-level system architecture and high-level user experiences.
+            Whether I'm developing core game mechanics in C#, automating daily workflows with TypeScript and Python, or experimenting with data and trading bots, I love connecting different technologies to create seamless experiences.
           </p>
         </div>
       </motion.div>
