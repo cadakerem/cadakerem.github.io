@@ -1,0 +1,39 @@
+name: Auto Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Her gece yarisi (UTC 00:00) otomatik calisarak diger repolardaki degisiklikleri ceker
+    - cron: '0 0 * * *'
+  workflow_dispatch: # GitHub arayuzunden manuel tetikleme butonu ekler
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # gh-pages dalina yazabilmesi icin gerekli izin
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Fetch Latest Data and Build
+        # package.json icindeki prebuild botlarini ve vite derlemesini calistirir
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          commit_message: "Auto-deployed latest projects & skills via GitHub Actions"
