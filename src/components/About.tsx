@@ -13,14 +13,13 @@ export default function About() {
         <h2 className="text-3xl font-bold mb-8 inline-block border-b-2 border-emerald-500/50 pb-2">About Me</h2>
         <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
           <p>
-            Hi! I'm a software developer with a strong foundation in <strong>Computer Programming</strong> and an ongoing passion for <strong>Digital Game Design</strong>. 
-            I thrive at the intersection of logical problem-solving and creative interactive experiences.
+            Hi! I'm a software developer who loves building practical tools and interactive experiences. With a background in <strong>Computer Programming</strong> and a current focus on <strong>Digital Game Design</strong>, I enjoy finding the sweet spot between creative problem-solving and writing clean, reliable code.
           </p>
           <p>
-            Recently, I've been focusing on <strong>Security, AI Integrations, and Web Tooling</strong>. I enjoy building practical solutions—whether that's a privacy-focused Linux setup, an AI-powered code reviewer, or React-based tools for game developers. My goal is always to write clean code that solves real problems.
+            Lately, I've been diving into <strong>Security, AI Integrations, and Web Tooling</strong>. Whether it's putting together a privacy-focused Linux environment, building an AI code reviewer, or creating React tools for game developers, I'm always looking to build things that are genuinely useful.
           </p>
           <p>
-            Whether I'm developing core game mechanics in C#, automating daily workflows with TypeScript and Python, or experimenting with data and trading bots, I love connecting different technologies to create seamless experiences.
+            At the end of the day, whether I'm working on game mechanics in C#, automating workflows with TypeScript and Python, or tinkering with data, I just really enjoy making different technologies work together seamlessly.
           </p>
         </div>
       </motion.div>

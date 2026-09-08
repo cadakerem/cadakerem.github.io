@@ -5,7 +5,11 @@
       "C#",
       "Python",
       "MonoGame",
-      ".NET"
+      ".NET",
+      "TypeScript",
+      "React",
+      "Vite",
+      "Tailwind"
     ]
   },
   {
