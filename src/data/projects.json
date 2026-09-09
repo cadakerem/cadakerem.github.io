@@ -1,5 +1,25 @@
 [
   {
+    "id": 1358126774,
+    "title": "amnesic-shell",
+    "description": "Anonymous, keyless terminal AI agent. Tor-integrated, zero footprint. Works on Linux and Windows. 100% API key free (powered by tgpt).",
+    "tech": [
+      "Python",
+      "ai-agent",
+      "anonymous",
+      "kali-linux",
+      "linux",
+      "llm",
+      "opsec",
+      "privacy",
+      "python",
+      "terminal"
+    ],
+    "github": "https://github.com/cadakerem/amnesic-shell",
+    "link": "https://github.com/cadakerem/amnesic-shell",
+    "updated_at": "2026-09-09T00:28:20Z"
+  },
+  {
     "id": 1346645716,
     "title": "cadakerem.github.io",
     "description": "Personal developer portfolio of Kerem Barbaros Karnabat. Built with React, Vite & Tailwind CSS.",
@@ -13,7 +33,7 @@
     ],
     "github": "https://github.com/cadakerem/cadakerem.github.io",
     "link": "https://cadakerem.me",
-    "updated_at": "2026-09-07T23:14:45Z"
+    "updated_at": "2026-09-08T17:24:19Z"
   },
   {
     "id": 1303441435,
