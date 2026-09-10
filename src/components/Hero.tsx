@@ -5,12 +5,13 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
       <motion.div
+        className="flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         <motion.div
-          className="mb-8 relative w-40 h-40 mx-auto"
+          className="mb-8 relative w-40 h-40"
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
