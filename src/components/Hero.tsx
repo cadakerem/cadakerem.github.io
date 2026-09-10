@@ -26,7 +26,7 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
           Kerem Barbaros Karnabat
         </h1>
-        <h2 className="text-lg md:text-2xl text-slate-400 mb-8 max-w-3xl mx-auto font-light tracking-wide whitespace-nowrap">
+        <h2 className="text-lg md:text-2xl text-slate-400 mb-8 max-w-3xl mx-auto font-light tracking-wide md:whitespace-nowrap">
           Software Developer | Digital Game Design | Workflow Automation
         </h2>
 
