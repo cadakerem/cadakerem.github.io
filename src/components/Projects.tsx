@@ -9,14 +9,14 @@ const manualProjects = [
     description: "Fail-closed architecture for plausible deniability and anonymous RAM-OS routing.",
     link: "https://github.com/cadakerem/amnesic-ghost-framework",
     demo: null,
-    tags: ["Bash", "Privacy", "Linux"]
+    tags: ["Bash", "Security", "OpSec"]
   },
   {
     title: "ReviewForge",
     description: "A GitHub Action that reviews Pull Requests and provides AI-driven feedback.",
     link: "https://github.com/cadakerem/ReviewForge",
     demo: null,
-    tags: ["GitHub Actions", "AI", "Code Review"]
+    tags: ["GitHub Actions", "AI", "Security"]
   },
   {
     title: "Agentic Vault",
