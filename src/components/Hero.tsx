@@ -26,8 +26,8 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
           Kerem Barbaros Karnabat
         </h1>
-        <h2 className="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl mx-auto">
-          Software Developer · Digital Game Designer · Workflow Automation
+        <h2 className="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl mx-auto font-light tracking-wide">
+          Developer Tooling &bull; AI Workflows &bull; Security
         </h2>
 
         <div className="flex gap-6 justify-center mb-8">
@@ -52,7 +52,7 @@ export default function Hero() {
           <a
             href="mailto:kbarbaros@hotmail.com"
             className="text-slate-400 hover:text-red-400 transition-colors"
-            aria-label="E-posta gönder"
+            aria-label="E-posta gÃ¶nder"
           >
             <FaEnvelope size={28} />
           </a>
