@@ -131,7 +131,7 @@
   {
     "id": 1342919843,
     "title": "reviewforge",
-    "description": "Autonomous SecOps & Code Review AI Agent. Serverless GitHub Action supporting Gemini, OpenAI, and Nvidia NIM.",
+    "description": "Autonomous Code Review AI Agent. Serverless GitHub Action supporting Gemini, OpenAI, and Nvidia NIM.",
     "tech": [
       "Python",
       "ai",
@@ -139,8 +139,7 @@
       "code-review",
       "gemini",
       "github-actions",
-      "llm",
-      "secops"
+      "llm"
     ],
     "github": "https://github.com/cadakerem/reviewforge",
     "link": "https://github.com/cadakerem/reviewforge",
@@ -155,7 +154,6 @@
       "anonymity",
       "kali-linux",
       "privacy",
-      "security",
       "tor",
       "veracrypt"
     ],

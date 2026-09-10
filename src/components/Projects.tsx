@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import fetchedProjects from '../data/projects.json';
 
@@ -6,17 +6,17 @@ import fetchedProjects from '../data/projects.json';
 const manualProjects = [
   {
     title: "Amnesic Ghost Framework",
-    description: "Fail-closed OpSec architecture for plausible deniability and anonymous RAM-OS routing.",
+    description: "Fail-closed architecture for plausible deniability and anonymous RAM-OS routing.",
     link: "https://github.com/cadakerem/amnesic-ghost-framework",
     demo: null,
-    tags: ["Bash", "Security", "OpSec"]
+    tags: ["Bash", "Privacy", "Linux"]
   },
   {
     title: "ReviewForge",
-    description: "A GitHub Action that reviews Pull Requests for security flaws and provides auto-fixes.",
+    description: "A GitHub Action that reviews Pull Requests and provides AI-driven feedback.",
     link: "https://github.com/cadakerem/ReviewForge",
     demo: null,
-    tags: ["GitHub Actions", "AI", "Security"]
+    tags: ["GitHub Actions", "AI", "Code Review"]
   },
   {
     title: "Agentic Vault",

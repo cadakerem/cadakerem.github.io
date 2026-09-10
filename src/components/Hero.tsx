@@ -27,7 +27,7 @@ export default function Hero() {
           Kerem Barbaros Karnabat
         </h1>
         <h2 className="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl mx-auto font-light tracking-wide">
-          Developer Tooling &bull; AI Workflows &bull; Security
+          Developer Tooling &bull; AI Workflows &bull; Privacy
         </h2>
 
         <div className="flex gap-6 justify-center mb-8">
