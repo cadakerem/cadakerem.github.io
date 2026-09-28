@@ -13,13 +13,10 @@ export default function About() {
         <h2 className="text-3xl font-bold mb-8 inline-block border-b-2 border-emerald-500/50 pb-2">About Me</h2>
         <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
           <p>
-            Hi! I'm an engineer dedicated to making the lives of developers and artists easier. While my academic roots lie in <strong>Computer Programming</strong> and <strong>Digital Game Design</strong>, my true passion is building the invisible infrastructure that makes software development fast, secure, and friction-free.
+            Hi! I'm a software developer with a background in <strong>Computer Programming</strong>, currently studying <strong>Digital Game Design</strong>. I work across different areas of software and game development, building tools, systems, and automations that solve practical problems and make development workflows more efficient.
           </p>
           <p>
-            My current focus heavily revolves around <strong>Developer Tooling</strong> and <strong>AI-Assisted Workflows</strong>. Whether I'm architecting a local LLM proxy to bypass enterprise restrictions, designing autonomous code review agents, or crafting keyless, privacy-focused Linux environments, I love solving complex systemic bottlenecks.
-          </p>
-          <p>
-            I believe that the best tools are the ones that get out of your way. From automation scripts in Python to sleek CLI utilities and asset pipelines in C#, my goal is always the same: empowering developers to write better code, faster.
+            My work covers a variety of projects, from developer tools and automation to game development and other software projects. I enjoy exploring new technologies, experimenting with different ideas, and finding practical ways to improve the development process.
           </p>
         </div>
       </motion.div>
