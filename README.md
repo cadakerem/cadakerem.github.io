@@ -36,3 +36,13 @@ This repository contains purely static frontend code. There are no backend integ
 
 ---
 *Designed and built by Kerem Barbaros Karnabat.*
+
+## 🧑‍💻 Developer & Contributions
+Developed by Kerem Barbaros Karnabat (@cadakerem).
+
+> **Note on Repository Structure:** [TODO: Add any specific notes about the repository structure here, e.g., source vs build artifacts.]
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [Issues page](../../issues).
+
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
