@@ -40,7 +40,7 @@ This repository contains purely static frontend code. There are no backend integ
 ## 🧑‍💻 Developer & Contributions
 Developed by Kerem Barbaros Karnabat (@cadakerem).
 
-> **Note on Repository Structure:** [TODO: Add any specific notes about the repository structure here, e.g., source vs build artifacts.]
+> **Note on Repository Structure:** This personal portfolio is built entirely client-side using React, Vite, and Tailwind CSS. All interactive components and layouts are found in the `src/` directory, and running `npm run build` generates the static HTML/JS files in `dist/` for GitHub Pages hosting.
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [Issues page](../../issues).
 
