@@ -1,39 +1,15 @@
 [
   {
-    "title": "Languages & Frameworks",
+    "title": "Tech Stack & Tools",
     "skills": [
-      "C#",
       "Python",
-      "MonoGame",
-      ".NET",
-      "TypeScript",
-      "React",
-      "Vite",
-      "Tailwind"
-    ]
-  },
-  {
-    "title": "Systems & DevOps",
-    "skills": [
-      "Linux",
-      "Bash",
-      "GitHub Actions"
-    ]
-  },
-  {
-    "title": "Game Engines & 3D",
-    "skills": [
-      "Unity",
-      "Autodesk Maya"
-    ]
-  },
-  {
-    "title": "Data & Automation",
-    "skills": [
+      "C#",
       "n8n",
-      "Pandas",
-      "Backtrader",
-      "yfinance"
+      "GitHub Actions",
+      "Git",
+      "Unity",
+      "MonoGame",
+      "Autodesk Maya"
     ]
   }
 ]

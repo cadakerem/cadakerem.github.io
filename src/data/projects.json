@@ -1,75 +1,81 @@
 [
   {
-    "id": 1358126774,
-    "title": "amnesic-shell",
-    "description": "Anonymous, keyless terminal AI agent. Tor-integrated, zero footprint. Works on Linux and Windows. 100% API key free (powered by tgpt).",
+    "id": 1372279659,
+    "title": "tetherpad",
+    "description": "Zero-lag universal gamepad bridge (PS4/PS5/Xbox) over USB via ADB and invisible Android background app.",
     "tech": [
       "Python",
-      "ai-agent",
-      "anonymous",
-      "kali-linux",
-      "linux",
-      "llm",
-      "opsec",
-      "privacy",
+      "adb",
+      "android",
+      "android-bridge",
+      "controller",
+      "dualsense",
+      "gamepad",
+      "ps5",
       "python",
-      "terminal"
+      "vigem",
+      "xinput",
+      "zero-lag"
     ],
-    "github": "https://github.com/cadakerem/amnesic-shell",
-    "link": "https://github.com/cadakerem/amnesic-shell",
-    "updated_at": "2026-09-09T00:28:20Z"
+    "github": "https://github.com/cadakerem/tetherpad",
+    "link": "https://github.com/cadakerem/tetherpad",
+    "updated_at": "2026-10-12T05:28:52Z"
   },
   {
-    "id": 1346645716,
-    "title": "cadakerem.github.io",
-    "description": "Personal developer portfolio of Kerem Barbaros Karnabat. Built with React, Vite & Tailwind CSS.",
+    "id": 1342919843,
+    "title": "reviewforge",
+    "description": "Autonomous SecOps & Code Review AI Agent. Serverless GitHub Action supporting Gemini, OpenAI, and Nvidia NIM.",
+    "tech": [
+      "Python",
+      "ai",
+      "automation",
+      "code-review",
+      "gemini",
+      "github-actions",
+      "llm",
+      "secops"
+    ],
+    "github": "https://github.com/cadakerem/reviewforge",
+    "link": "https://github.com/cadakerem/reviewforge",
+    "updated_at": "2026-10-11T13:28:32Z"
+  },
+  {
+    "id": 1336067491,
+    "title": "agentic-vault",
+    "description": "The ultimate Obsidian plugin to automate Git sync, manage AI system prompts, and enable Issue-Driven Development directly from your vault.",
     "tech": [
       "TypeScript",
-      "framer-motion",
-      "game-developer",
-      "react",
-      "tailwindcss",
-      "vite"
+      "ai",
+      "git-automation",
+      "issue-driven-development",
+      "obsidian",
+      "obsidian-plugin",
+      "productivity"
     ],
-    "github": "https://github.com/cadakerem/cadakerem.github.io",
-    "link": "https://cadakerem.me",
-    "updated_at": "2026-09-08T17:24:19Z"
+    "github": "https://github.com/cadakerem/agentic-vault",
+    "link": "https://community.obsidian.md/plugins/agentic-vault",
+    "updated_at": "2026-10-04T22:28:03Z"
   },
   {
-    "id": 1303441435,
-    "title": "tlou-simulation",
-    "description": "A Python simulation of The Last of Us's survival/crafting loop, translated from a Machinations.io system design — models resource scarcity and combat pressure across three player skill profiles.",
+    "id": 1364180799,
+    "title": "llm-proxy-cli",
+    "description": "A lightweight, fault-tolerant CLI tool for delegating LLM tasks to expert models across multiple providers (Nvidia, Groq, OpenAI, Anthropic, Gemini).",
     "tech": [
       "Python",
-      "game-design",
-      "game-development",
-      "game-mechanics",
-      "machinations",
-      "python",
-      "resource-management",
-      "simulation"
+      "ai",
+      "ai-agents",
+      "antigravity-skill",
+      "claude-code",
+      "dev-tools",
+      "groq",
+      "llm",
+      "llm-proxy",
+      "openai",
+      "proxy"
     ],
-    "github": "https://github.com/cadakerem/tlou-simulation",
-    "link": "https://my.machinations.io/d/tlou-survival-loop-simulation/7a7ce51a522611f190390abc5ce0dcc9",
-    "updated_at": "2026-09-07T22:25:57Z"
-  },
-  {
-    "id": 1217472272,
-    "title": "coffin-clash",
-    "description": "A 2-player local combat game built with MonoGame/C# — push a central coffin toward your opponent's tower with arrow fire, then survive escalating skeleton waves between rounds.",
-    "tech": [
-      "C#",
-      "2d-game",
-      "action-game",
-      "csharp",
-      "game-development",
-      "indiedev",
-      "local-multiplayer",
-      "monogame"
-    ],
-    "github": "https://github.com/cadakerem/coffin-clash",
-    "link": "https://github.com/cadakerem/coffin-clash",
-    "updated_at": "2026-09-07T22:25:56Z"
+    "github": "https://github.com/cadakerem/llm-proxy-cli",
+    "link": "https://github.com/cadakerem/llm-proxy-cli",
+    "updated_at": "2026-10-01T22:12:29Z"
   },
   {
     "id": 1330119028,
@@ -91,7 +97,7 @@
     ],
     "github": "https://github.com/cadakerem/portfolio-ai",
     "link": "https://github.com/cadakerem/portfolio-ai",
-    "updated_at": "2026-09-07T22:25:55Z"
+    "updated_at": "2026-10-01T02:09:07Z"
   },
   {
     "id": 1333248724,
@@ -109,42 +115,27 @@
     ],
     "github": "https://github.com/cadakerem/sprite-packer-web",
     "link": "https://cadakerem.github.io/sprite-packer-web/",
-    "updated_at": "2026-09-07T22:25:53Z"
+    "updated_at": "2026-10-01T01:13:32Z"
   },
   {
-    "id": 1336067491,
-    "title": "agentic-vault",
-    "description": "The ultimate Obsidian plugin to automate Git sync, manage AI system prompts, and enable Issue-Driven Development directly from your vault.",
-    "tech": [
-      "JavaScript",
-      "ai",
-      "git-automation",
-      "issue-driven-development",
-      "obsidian",
-      "obsidian-plugin",
-      "productivity"
-    ],
-    "github": "https://github.com/cadakerem/agentic-vault",
-    "link": "https://github.com/cadakerem/agentic-vault",
-    "updated_at": "2026-09-07T22:25:52Z"
-  },
-  {
-    "id": 1342919843,
-    "title": "reviewforge",
-    "description": "Autonomous Code Review AI Agent. Serverless GitHub Action supporting Gemini, OpenAI, and Nvidia NIM.",
+    "id": 1358126774,
+    "title": "amnesic-shell",
+    "description": "Anonymous, keyless terminal AI agent. Tor-integrated, zero footprint. Works on Linux and Windows. 100% API key free (powered by tgpt).",
     "tech": [
       "Python",
-      "ai",
-      "automation",
-      "code-review",
-      "gemini",
-      "github-actions",
+      "ai-agent",
+      "anonymous",
+      "kali-linux",
+      "linux",
       "llm",
-      "secops"
+      "opsec",
+      "privacy",
+      "python",
+      "terminal"
     ],
-    "github": "https://github.com/cadakerem/reviewforge",
-    "link": "https://github.com/cadakerem/reviewforge",
-    "updated_at": "2026-09-07T22:25:51Z"
+    "github": "https://github.com/cadakerem/amnesic-shell",
+    "link": "https://github.com/cadakerem/amnesic-shell",
+    "updated_at": "2026-10-01T01:13:03Z"
   },
   {
     "id": 1360496269,
@@ -161,6 +152,6 @@
     ],
     "github": "https://github.com/cadakerem/amnesic-ghost-framework",
     "link": "https://github.com/cadakerem/amnesic-ghost-framework",
-    "updated_at": "2026-09-07T22:25:50Z"
+    "updated_at": "2026-10-01T01:13:00Z"
   }
 ]

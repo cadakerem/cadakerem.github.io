@@ -43,15 +43,22 @@ function parseResponse(res) {
         }
         
         if (isTechStackSection) {
-          if (line.startsWith('### **')) {
-            currentCategory = line.replace('### **', '').replace('**', '').trim();
+          if (line.startsWith('###')) {
+            currentCategory = line.replace(/###\s*\**/, '').replace(/\**/g, '').trim();
             skillCategories.push({
               title: currentCategory,
               skills: []
             });
-          } else if (line.startsWith('![') && currentCategory) {
+          } else if (line.startsWith('![')) {
             const match = line.match(/!\[(.*?)\]/);
             if (match && match[1]) {
+              if (skillCategories.length === 0) {
+                currentCategory = 'Tech Stack & Tools';
+                skillCategories.push({
+                  title: currentCategory,
+                  skills: []
+                });
+              }
               skillCategories[skillCategories.length - 1].skills.push(match[1]);
             }
           }
